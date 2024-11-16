@@ -6,7 +6,7 @@ function Buttons() {
         document.body.style.background=color;
     },[color]);
     return (
-        <div className='bg-cyan-700  flex  px-4 py-2 rounded-[50px] w-full justify-around'>
+        <div className="bg-cyan-700  flex  px-4 py-2 rounded-[50px] w-full justify-around transition-colors duration-[10000] ease-in-out">
             <button className='bg-red-700 p-2 rounded-[15px] w-[5rem] text-center' onClick={() => {setColor("#b91c1c")}}>Red</button>
             <button className="bg-green-700 p-2 rounded-[15px] w-[5rem] text-center" onClick={()=>{setColor("Green")}} >Green</button>
             <button className="bg-blue-700 p-2 rounded-[15px] w-[5rem] text-center" onClick={()=>{setColor("Blue")}}>Blue</button>
