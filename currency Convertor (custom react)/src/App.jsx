@@ -40,12 +40,11 @@ function App() {
             <div className="w-full mb-1">
               <InputBox
                 label="From"
-                amount={amount.toFixed(4)}
+                amount={amount}
                 currencyOptions={options}
                 onCurrencyChange={(currency) => setFrom(currency)}
                 selectCurrency={From}
                 onAmountChange={(amount) => setAmount(amount)}
-
               />
             </div>
             <div className="relative w-full h-0.5">
