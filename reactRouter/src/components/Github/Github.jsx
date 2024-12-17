@@ -25,7 +25,6 @@ function Github(){
                     <div className=" text-white text-3xl p-2 text-center">Github Following: {data.following}</div>
                 </div>
             </div>
-            
         </>
     )
 }
