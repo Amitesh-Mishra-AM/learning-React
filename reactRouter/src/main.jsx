@@ -10,8 +10,6 @@ import Contact from './components/ContactUs/ContactUs.jsx'
 import User from './components/User/User.jsx'
 import Github, {githubInfoLoader} from './components/Github/Github.jsx'
 
-
-
 // const router=createBrowserRouter([
 //   {
 //     path:'/',
