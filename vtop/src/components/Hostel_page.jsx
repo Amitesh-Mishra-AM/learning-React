@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import Logo from "../assets/VITLogoEmblem.png";
-import UserImg from "../assets/my_passport_size_photo.jpg"
+import UserImg from "../private/my_passport_size_photo.jpg"
 
 function Hostel_page() {
     const location = useLocation();
