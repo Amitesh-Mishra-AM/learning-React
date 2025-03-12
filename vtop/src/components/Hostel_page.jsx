@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import Logo from "../assets/VITLogoEmblem.png";
-import UserImg from "../assets/my_passport_size_photo.jpg";
+import UserImg from "../assets/my_passport_size_photo.jpg"
 
 function Hostel_page() {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const selectedOption = location.state?.option || "No option selected";
+
+    useEffect(() => {
+        if (!location.state) {
+            navigate("/"); // Redirect if no state is found
+        }
+    }, [location, navigate]);
+
     return (
         <div className="flex flex-col h-screen bg-gray-100">
             {/* Header */}
@@ -102,7 +113,7 @@ function Hostel_page() {
                             </div>
                             <div className="flex border-b border-gray-300">
                                 <div className="bg-[#d4d3d3] w-1/3 p-3 font-semibold">Block Name</div>
-                                <div className="bg-[#f2dede] w-2/3 p-3">Large Dining-2(BOYS HOSTEL- Block)</div>
+                                <div className="bg-[#f2dede] w-2/3 p-3">{selectedOption}</div>
                             </div>
                             <div className="flex border-b border-gray-300">
                                 <div className="bg-[#d4d3d3] w-1/3 p-3 font-semibold">Room No.</div>
