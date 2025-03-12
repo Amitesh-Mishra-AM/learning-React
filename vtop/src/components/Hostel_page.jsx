@@ -131,9 +131,6 @@ function Hostel_page() {
                         <div className="p-2 bg-[#f2dede] flex items-start justify-center">
                             <div className="p-[7px] rounded-[4px]  bg-gray-300 border-gray-400 flex items-center justify-center overflow-hidden">
                                 <img className="h-[130px] w-[120px] rounded-[14px]  border-2 border-[#3c8dbc]" src={UserImg} alt="UserImg" />
-                                {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                                </svg> */}
                             </div>
                         </div>
                     </div>
