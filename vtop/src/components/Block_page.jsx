@@ -14,12 +14,14 @@ function Block_page() {
         <>
             <div className="flex flex-col justify-center">
                 <h1 className="flex justify-center">Choose a block</h1>
-                <button className="cursor-pointer" onClick={() => handleSelection("Large Dining-2 (BOYS HOSTEL)")}>
-                    Large Dining-2 (BOYS HOSTEL)
-                </button>
-                <button className="cursor-pointer" onClick={() => handleSelection("MENS HOSTEL BLOCK-2 (BOYS HOSTEL - Block )")}>
-                    MENS HOSTEL BLOCK-2 (BOYS HOSTEL - Block )
-                </button>
+                <div className="flex rounded-[24px] justify-center"> 
+                    <button className="cursor-pointer m-[2px] bg-gray-200" onClick={() => handleSelection("Large Dining-2 (BOYS HOSTEL)")}>
+                        Large Dining-2 (BOYS HOSTEL)
+                    </button>
+                    <button className="cursor-pointer bg-gray-200" onClick={() => handleSelection("MENS HOSTEL BLOCK-2 (BOYS HOSTEL - Block )")}>
+                        MENS HOSTEL BLOCK-2 (BOYS HOSTEL - Block )
+                    </button>
+                </div>
             </div>
         </>
     );
